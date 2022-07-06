@@ -1,0 +1,62 @@
+@import '../helpers/mixins';
+
+.Chart {
+  display: flex;
+  flex-direction: column;
+
+  @include onPhone {
+    width: 200px;
+  }
+
+  @include onDesktop {
+    width: 400px;
+  }
+
+  &__item {
+    width: 100%;
+    height: 30px;
+    background-color: #f4f4f4;
+    margin: 0 0 20px;
+
+    &::before {
+      position: absolute;
+      line-height: 30px;
+      font-size: 16px;
+      transform: translateX(-100%);
+      padding: 0 5px 0 0;
+    }
+
+    &--0 {
+      &::before {
+        content: 'Landing Page';
+      }
+    }
+
+    &--1 {
+      &::before {
+        content: 'Configurator';
+      }
+    }
+
+    &--2 {
+      &::before {
+        content: 'Check-out';
+      }
+    }
+
+    &--3 {
+      &::before {
+        content: 'Deal';
+      }
+    }
+  }
+  
+  &__time {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b4defe;
+    height: 100%;
+  }
+}

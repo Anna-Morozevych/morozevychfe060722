@@ -1,3 +1,44 @@
-.starter {
-  font-size: 18px;
+@import './helpers/mixins';
+
+.App {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include onPhone {
+    width: 300px;
+    margin: 0 0 0 100px;
+  }
+
+  @include onDesktop {
+    width: 600px;
+    margin: auto;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  &__button {
+    display: block;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    // margin: 0 auto 10px;
+    background-color: #b4defe;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #fff;
+      border-color: #b4defe;
+      transform: scale(1.1);
+    }
+  }
 }
