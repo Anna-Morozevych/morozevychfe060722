@@ -1,9 +1,11 @@
-# React TypeScript Starter Pack
+# Additional instructions for starting
 
-To use this template click `Use this template`
+1. Fork the repo
+2. Clone the forked repo be running git clone the-link-from-github
+3. Open the project in IDE
+4. Run npm install (or just npm i)
+5. Run npm start
 
-### Available Scripts
+### DEMO LINK
 
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+https://anna-morozevych.github.io/morozevychfe060722/
